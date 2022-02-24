@@ -1,0 +1,85 @@
+@import "../Variables/Variables.scss";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  padding-top: 1rem;
+  background-color: $blackColor;
+  color: $whiteColor;
+  font-family: $titleFont;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  // nest tags
+
+  // button{
+  //     @include buttonStyle($whiteColor,40px);
+  // }
+
+  .far-right-end {
+    display: flex;
+
+    .cart {
+      display: flex;
+    }
+    .logo {
+      margin-right: 6rem;
+    }
+  }
+}
+
+
+ul {
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  width: 0;
+
+  
+  li {
+    color: $blackColor;
+    line-height: 1.5;
+    text-decoration: none;
+    list-style-type: none;
+    width: 400px;
+    margin-bottom:1rem;
+    
+
+
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    color: white;
+    
+  }
+
+  button {
+    @include buttonStyle($blackColor, 18px);
+    background-color: $listColor;
+    color: white;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+
+
+    
+    
+  }
+}
+
+
+.login{
+  width: 450px;
+  display: flex;
+
+}
+
+
+
+// loop through an array. look at every index and compare it to the target
