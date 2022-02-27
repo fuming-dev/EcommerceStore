@@ -1,4 +1,5 @@
 @import "../Variables/Variables.scss";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -48,10 +49,8 @@ ul {
     list-style-type: none;
     width: 400px;
     margin-bottom:1rem;
-    
-
-
   }
+
   a {
     text-decoration: none;
     color: black;
@@ -66,20 +65,86 @@ ul {
     color: white;
     margin-bottom: 1rem;
     border: 1px solid black;
-
-
-    
-    
   }
 }
 
 
 .login{
-  width: 450px;
+  width: 484px;
   display: flex;
 
 }
 
 
+.desktop-view{
+  display: none;
 
-// loop through an array. look at every index and compare it to the target
+}
+
+
+// Desktop view
+
+@media only screen and (min-width: 768px){
+
+  .mobile-view{
+      display: none;
+  }
+
+  .desktop-view{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+
+  .desktop-view a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+
+  .desktop-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .far-right-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+
+
+  }
+  .far-right-end .logo{
+    display: none;
+  }
+
+  .main-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    
+
+  }
+  .search input{
+    font-size: 1rem;
+    padding: 0.1rem;
+  }
+
+}
+

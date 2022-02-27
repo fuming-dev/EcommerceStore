@@ -13,10 +13,13 @@ const Home = () => {
       {shop.map((shops) => {
         return(
           <div className="shop-container">
+            <div className="desktop-container">
             <div className="shop-at">
               <img src={shops.image} alt=" Shops"/>
               <button>{shops.title}</button>
-            </div>  
+            </div> 
+            </div>
+  
      
           </div>
         )

@@ -4,11 +4,38 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { HiSearch, HiOutlineShoppingCart } from "react-icons/hi";
-import { BiUser, BiHeart } from "react-icons/bi" ;
+import { BiUser, BiHeart } from "react-icons/bi";
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false);
   return (
     <nav>
+      <div className="desktop-view">
+      <div className="main-cont">
+          <div className="logo">
+            <h1>AnimeShop</h1>
+          </div>
+       </div>
+        <div className="desktop-links">
+          <Link to="/">Home</Link>
+        </div>
+        <div className="desktop-links">
+          <Link to="/cart">Cart</Link>
+        </div>
+        <div className="desktop-links">
+          <Link to="/clothing">Clothing</Link>
+        </div>
+        <div className="desktop-links">
+          <Link to="/shopbyseries">Shop By Series</Link>
+        </div>
+        <div className="desktop-links">
+          <Link to="/sale">Sale</Link>
+        </div>
+        <div className="desktop-links">
+          <Link to="/contact">Help</Link>
+        </div>
+
+      </div>
+
       <div className="mobile-view">
         {showNav ? (
           <RiCloseLine
@@ -27,9 +54,15 @@ const Navbar = () => {
           <ul className="nav-links" onClick={() => setshowNav(false)}>
             <div className="nav-container">
               <div className="login">
-                  <button><BiUser/>My Account</button>
-                  <button><BiHeart/>Wishlist</button>
-                </div>
+                <button>
+                  <BiUser />
+                  My Account
+                </button>
+                <button>
+                  <BiHeart />
+                  Wishlist
+                </button>
+              </div>
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -37,7 +70,7 @@ const Navbar = () => {
                 <Link to="/cart">Cart</Link>
               </li>
 
-              <li> 
+              <li>
                 <Link to="/clothing">Clothing</Link>
               </li>
 
@@ -52,24 +85,28 @@ const Navbar = () => {
               <li>
                 <Link to="/contact">Help</Link>
               </li>
-
-              </div>
-   
+            </div>
           </ul>
         ) : (
           ""
         )}
       </div>
-        <div className="far-right-end">
-          <div className="logo">
-            <h1>AnimeShop</h1>
+      <div className="far-right-end">
+        <div className="logo">
+          <h1>AnimeShop</h1>
+        </div>
+        <div className="search">
+          <div className="form">
+            <form action="/">
+              <input type="text" placeholder='Search..' />
+            </form>
           </div>
-          <div className="search">
-              <HiSearch color="#fff" size={32} />
-          </div>
-          <div className="cart">
-              <HiOutlineShoppingCart color="#fff" size={32}/>
-          </div>
+          <HiSearch color="#fff" size={32} />
+
+        </div>
+        <div className="cart">
+          <HiOutlineShoppingCart color="#fff" size={32} />
+        </div>
       </div>
     </nav>
   );
