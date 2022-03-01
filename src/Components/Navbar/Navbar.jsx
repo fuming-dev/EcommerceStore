@@ -19,19 +19,19 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </div>
         <div className="desktop-links">
-          <Link to="/cart">Cart</Link>
+          <Link to="/">Cart</Link>
         </div>
         <div className="desktop-links">
-          <Link to="/clothing">Clothing</Link>
+          <Link to="/">Clothing</Link>
         </div>
         <div className="desktop-links">
-          <Link to="/shopbyseries">Shop By Series</Link>
+          <Link to="/">Shop By Series</Link>
         </div>
         <div className="desktop-links">
-          <Link to="/sale">Sale</Link>
+          <Link to="/">Sale</Link>
         </div>
         <div className="desktop-links">
-          <Link to="/contact">Help</Link>
+          <Link to="/">Help</Link>
         </div>
 
       </div>

@@ -3,7 +3,7 @@
 
 
 .test{
-    background-color: #2A4494;
+    background-color: white;
     font-size: 24px;
     color:white;
 }
@@ -59,13 +59,16 @@
         
     }
 
-    .test{
+    .desktop-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    
+        width: 1000px;
+        margin: auto;
+        
+
     }
 
-    
+
  
 
 

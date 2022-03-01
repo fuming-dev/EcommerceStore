@@ -40,25 +40,7 @@
 
 @media only screen and (min-width: 768px) {
   .slider {
-    max-width: 700px;
-    height: 300px;
-    display: img;
-    display-width: 200px;
-    display-object-fit: cover;
-  }
-  .slider .carousel-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .slider .center {
-    text-align: center;
+    display: none;
   }
 }
 /*# sourceMappingURL=carousel.css.map */

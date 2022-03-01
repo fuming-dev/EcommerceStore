@@ -9,6 +9,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import DesktopImage from './Components/DesktopImages/DesktopImage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home/>}/>
         </Routes>
+        <DesktopImage/>
         <Carousel/>
         <Footer />
 
