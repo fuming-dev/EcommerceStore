@@ -68,22 +68,18 @@ ul {
   }
 }
 
-
 .login{
   width: 484px;
   display: flex;
 
 }
 
-
 .desktop-view{
   display: none;
 
 }
 
-
 // Desktop view
-
 @media only screen and (min-width: 768px){
 
   .mobile-view{
@@ -114,12 +110,9 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-
-
-
-
+  
   }
+
   .far-right-end .logo{
     display: none;
   }
@@ -144,6 +137,14 @@ ul {
   .search input{
     font-size: 1rem;
     padding: 0.1rem;
+  }
+
+}
+
+// 
+@media (max-width: 600px) {
+  .search {
+    display: none;
   }
 
 }

@@ -159,4 +159,10 @@ ul button {
     padding: 0.1rem;
   }
 }
+
+@media (max-width: 600px) {
+  .search {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Navbar.css.map */

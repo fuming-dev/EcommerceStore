@@ -20,8 +20,7 @@ const Home = () => {
               <button>{shops.title}</button>
             </div> 
          
-  
-     
+
           </div>
         )
       })}

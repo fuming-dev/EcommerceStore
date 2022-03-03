@@ -61,6 +61,25 @@
   opacity: 0.5;
 }
 
+
+// Mobile Footer
+.mobile-links{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem;
+
+  a{
+    color:white;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: red;
+  }
+}
+
+
 @media only screen and (min-width: 768px) {
   .footer-container {
     display: flex;
@@ -93,9 +112,23 @@
 
   }
   .footer-links{
+    
       width: 300px;
       height: 200px;
       display: flex;
       flex-direction: column;
   }
+
+  .mobile-links{
+    display: none;
+  }
 }
+
+@media (max-width: 600px) {
+  .footer-inner {
+    display: none;
+  }
+}
+
+
+

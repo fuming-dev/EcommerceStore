@@ -18,4 +18,10 @@
   width: 200px;
   height: 100px;
 }
+
+@media (max-width: 600px) {
+  .image-container {
+    display: none;
+  }
+}
 /*# sourceMappingURL=desktop.css.map */
